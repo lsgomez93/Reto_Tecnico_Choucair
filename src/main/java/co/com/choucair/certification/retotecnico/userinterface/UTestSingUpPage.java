@@ -19,6 +19,7 @@ public class UTestSingUpPage {
             .located(By.id("birthDay"));
     public static final Target SELECT_YEAR = Target.the("where the year of birth is selected")
             .located(By.id("birthYear"));
+
     public static final Target BUTTON_NEXT_LOCATION = Target.the("button go to the location form")
             .located(By.xpath("//a[@aria-label='Next step - define your location']"));
     public static final Target INPUT_CITY = Target.the("where do we write the city")
@@ -45,18 +46,18 @@ public class UTestSingUpPage {
     public static final Target INPUT_MOBIL = Target.the("where your mobil is selected")
             .located(By.xpath("//input[@placeholder='Select Brand']"));
 
-    public static final Target SELECT_MODEL_MOBIL = Target.the("where your mobil is selected")
+    public static final Target SELECT_MODEL_MOBIL = Target.the("where your mobil model is selected")
             .located(By.cssSelector(".btn.btn-default.form-control.ui-select-toggle[aria-label='Select a Model']"));
-    public static final Target OPTION_MODEL_MOBIL = Target.the("where your mobil is selected")
+    public static final Target OPTION_MODEL_MOBIL = Target.the("where your mobil model is selected")
             .located(By.xpath("//div[@class='ui-select-choices-row active']"));
-    public static final Target INPUT_MODEL_MOBIL = Target.the("where your mobil is selected")
+    public static final Target INPUT_MODEL_MOBIL = Target.the("where your mobil model is selected")
             .located(By.xpath("//input[@placeholder='Select a Model']"));
 
-    public static final Target SELECT_MOBIL_OS = Target.the("where your mobil is selected")
+    public static final Target SELECT_MOBIL_OS = Target.the("where your mobil OS is selected")
             .located(By.cssSelector("#mobile-device .btn.ui-select-toggle[aria-label='Select OS']"));
-    public static final Target OPTION_MOBIL_OS = Target.the("where your mobil is selected")
+    public static final Target OPTION_MOBIL_OS = Target.the("where your mobil OS is selected")
             .located(By.xpath("//div[@class='ui-select-choices-row active']"));
-    public static final Target INPUT_MOBIL_OS = Target.the("where your mobil is selected")
+    public static final Target INPUT_MOBIL_OS = Target.the("where your mobil OS is selected")
             .located(By.cssSelector("#mobile-device input[placeholder='Select OS']"));
 
     public static final Target BUTTON_LAST_STEP = Target.the("button go to the devices form")

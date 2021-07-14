@@ -3,7 +3,7 @@ package co.com.choucair.certification.retotecnico.userinterface;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class UTestSingUpPage  {
+public class UTestSingUpPage {
 
     public static final Target SING_UP_BUTTON = Target.the("button that shows us the form to sing up")
             .located(By.xpath("//a[@class='unauthenticated-nav-bar__sign-up']"));
@@ -30,32 +30,33 @@ public class UTestSingUpPage  {
 
     public static final Target BUTTON_NEXT_DEVICES = Target.the("button go to the devices form")
             .located(By.xpath("//a[@aria-label='Next step - select your devices']"));
-    public static final Target SELECT_COMPUTER_SO = Target.the("where the operativo system is selected")
+
+    public static final Target SELECT_COMPUTER_OS = Target.the("where the operativo system is selected")
             .located(By.xpath("//span[contains(text),'Select OS']"));
-    public static final Target SELECT_VERSION_SO = Target.the("where the version operativo system is selected")
+    public static final Target SELECT_VERSION_OS = Target.the("where the version operativo system is selected")
             .located(By.xpath("//span[contains(text),'Select a Version']"));
-    public static final Target SELECT_LANGUAGE_SO = Target.the("where the language operativo system is selected")
+    public static final Target SELECT_LANGUAGE_OS = Target.the("where the language operativo system is selected")
             .located(By.xpath("//span[contains(text),'Select OS language']"));
 
     public static final Target SELECT_MOBIL = Target.the("where your mobil is selected")
             .located(By.cssSelector(".btn.btn-default.form-control.ui-select-toggle[aria-label='Select Brand']"));
     public static final Target OPTION_MOBIL = Target.the("where your mobil is selected")
-            .located(By.xpath("//span[@class='ui-select-choices-row-inner']//span[contains(text(), 'Alcatel')]"));
+            .located(By.xpath("//div[@class='ui-select-choices-row active']"));
     public static final Target INPUT_MOBIL = Target.the("where your mobil is selected")
             .located(By.xpath("//input[@placeholder='Select Brand']"));
 
     public static final Target SELECT_MODEL_MOBIL = Target.the("where your mobil is selected")
             .located(By.cssSelector(".btn.btn-default.form-control.ui-select-toggle[aria-label='Select a Model']"));
     public static final Target OPTION_MODEL_MOBIL = Target.the("where your mobil is selected")
-            .located(By.xpath("//span[@class='ui-select-choices-row-inner']//span[contains(text(), 'One Touch Idol')]"));
+            .located(By.xpath("//div[@class='ui-select-choices-row active']"));
     public static final Target INPUT_MODEL_MOBIL = Target.the("where your mobil is selected")
             .located(By.xpath("//input[@placeholder='Select a Model']"));
 
-    public static final Target SELECT_MOBIL_OS= Target.the("where your mobil is selected")
+    public static final Target SELECT_MOBIL_OS = Target.the("where your mobil is selected")
             .located(By.cssSelector("#mobile-device .btn.ui-select-toggle[aria-label='Select OS']"));
     public static final Target OPTION_MOBIL_OS = Target.the("where your mobil is selected")
-            .located(By.xpath("//span[@class='ui-select-choices-row-inner']//span[contains(text(), 'Android 5.1.1')]"));
-    public static final Target INPUT_MOBIL_OS= Target.the("where your mobil is selected")
+            .located(By.xpath("//div[@class='ui-select-choices-row active']"));
+    public static final Target INPUT_MOBIL_OS = Target.the("where your mobil is selected")
             .located(By.cssSelector("#mobile-device input[placeholder='Select OS']"));
 
     public static final Target BUTTON_LAST_STEP = Target.the("button go to the devices form")
@@ -74,7 +75,7 @@ public class UTestSingUpPage  {
             .located(By.xpath("//input[@id='privacySetting']"));
     public static final Target BUTTON_COMPLETE = Target.the("button to complete form")
             .located(By.id("laddaBtn"));
-    public static final Target BUTTON_BACK = Target.the("button go to back")
-            .located(By.xpath("//a[@class='btn btn-grey btn-rounded pull-left']//span[contains(text(),'Back')]"));
 
+    public static final Target WELCOME = Target.the("show welcome page")
+            .located(By.xpath("//h1"));
 }
